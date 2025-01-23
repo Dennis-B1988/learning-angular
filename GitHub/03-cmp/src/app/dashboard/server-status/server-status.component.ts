@@ -28,7 +28,7 @@ export class ServerStatusComponent implements OnInit {
       } else {
         this.currentStatus.set('unknown');
       }
-    }, 5000);
+    }, 10000);
 
     this.destroyRef.onDestroy(() => {
       clearInterval(interval);
