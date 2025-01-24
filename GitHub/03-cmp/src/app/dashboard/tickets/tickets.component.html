@@ -1,11 +1,11 @@
 <div>
   <ul>
     @for (ticket of tickets; track ticket.id) {
-    <li>
-      <app-ticket [data]="ticket" (close)="onClose(ticket.id)"></app-ticket>
-    </li>
+      <li>
+        <app-ticket [data]="ticket" (close)="onClose(ticket.id)"></app-ticket>
+      </li>
     } @empty {
-    <li>No tickets available.</li>
+      <li>No tickets available.</li>
     }
   </ul>
 </div>
